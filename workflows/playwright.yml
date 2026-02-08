@@ -1,0 +1,29 @@
+name: Playwright API Tests (Windows)
+
+on:
+  push:
+    branchs: ["main"]
+  pull_request:
+    branchs: ["main"]
+
+jobs:
+  api-tests:
+   runs-on: Windows-latest
+
+   steps:
+    - name: Checkout do código
+      uses: actions/checkout@v4
+
+    - name: Setup Node.js 
+      uses: actions/setup-node@v4
+      with:
+        node-version: 20
+
+    - name: Instalar dependências
+      run: npm código
+
+    - name: Instalar Playwright
+      run: npx Playwright install
+
+    - name: Rodar testes de API
+      run: npx playwright test
