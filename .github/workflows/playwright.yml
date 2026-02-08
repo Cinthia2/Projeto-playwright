@@ -20,7 +20,7 @@ jobs:
         node-version: 20
 
     - name: Instalar dependências
-      run: npm código
+      run: npm ci
 
     - name: Instalar Playwright
       run: npx Playwright install
