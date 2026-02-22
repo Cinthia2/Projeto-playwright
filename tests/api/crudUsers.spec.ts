@@ -14,8 +14,11 @@ test.describe.serial('CRUD Usuários API', () => {
 
   test('MÉTODO POST', async () => {
     payload = gerarUsuario();
+    const guardarUsurario = await usuariosApi.criarUsuario(payload)
+    console.log("usuario  salvo :"+JSON.stringify(guardarUsurario));
 
-    const response = await usuariosApi.criarUsuario(payload);
+    const response = await guardarUsurario;
+
     const body = await response.json();
 
     userId = body._id;
