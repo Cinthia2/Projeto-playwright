@@ -1,5 +1,5 @@
 import { test, expect, request } from '@playwright/test'
-import { AuthApi } from '../../services/token.api'
+import { AuthApi } from '../../services/token'
 
 let apiContext;
 let authApi;

@@ -1,6 +1,6 @@
 import { test, expect } from '../../fixtures/auth.fixture';
 
-import { UsuariosApi } from '../../services/usuarios.api';
+import { UsuariosApi } from '../../services/usuarios';
 import { gerarUsuario, UsuarioPayload } from '../../utils/faker';
 
 test.describe.serial('CRUD Usuários API', () => {
@@ -53,4 +53,5 @@ test.describe.serial('CRUD Usuários API', () => {
 
     expect(response.status()).toBe(200);
   });
+  
 });

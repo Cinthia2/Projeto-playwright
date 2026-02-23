@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 
-import { UsuariosApi } from '../../services/usuarios.api';
+import { UsuariosApi } from '../../services/usuarios';
 import { gerarUsuario } from '../../utils/faker';
 
 
